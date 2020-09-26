@@ -14,9 +14,9 @@ pipeline  {
         stage("Start python script") {
             steps {
                 echo 'Try to run start.py ...'
-                dir('.'){
-                    sh "sudo apt -y install python-pip"
-                    sh "pip3 install -r requirements.txt"
+                dir('.'){   
+                    // sh "apt -y install python-pip"
+                    // sh "pip3 install -r requirements.txt"
                     sh "python3 start.py"
                 }
             }

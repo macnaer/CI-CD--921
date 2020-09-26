@@ -11,11 +11,11 @@ pipeline  {
         timestamps()
     }
     stages {
-        stage("Create docker image") {
+        stage("Start python script") {
             steps {
-                echo 'Creating docker image ...'
+                echo 'Try to run start.py ...'
                 dir('.'){
-                    sh "echo 'Hello World' "
+                    sh "python start.py"
                 }
             }
         }

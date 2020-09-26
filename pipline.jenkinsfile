@@ -15,7 +15,7 @@ pipeline  {
             steps {
                 echo 'Try to run start.py ...'
                 dir('.'){
-                    sh "python start.py"
+                    sh "python3 start.py"
                 }
             }
         }

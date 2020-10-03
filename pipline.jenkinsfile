@@ -15,6 +15,7 @@ pipeline  {
             steps {
                 echo 'Try to run start.py ...'
                 dir('.'){   
+                    sh "pip3 install -r requirements.txt"
                     sh "python3 start.py"
                 }
             }
